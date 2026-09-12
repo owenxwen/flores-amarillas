@@ -213,6 +213,35 @@ body {
   -webkit-animation: blooming-leaf-left var(--fl-speed) 1.9s backwards;
   animation: blooming-leaf-left var(--fl-speed) 1.9s backwards;
 }
+
+.flower--4 {
+  left: 50%;
+  bottom: 20vmin;
+  transform: rotate(-15deg);
+  -webkit-animation: moving-flower-4 4s linear infinite;
+  animation: moving-flower-4 4s linear infinite;
+}
+.flower--4 .flower__line {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+.flower--4 .flower__line__leaf--1 {
+  -webkit-animation: blooming-leaf-right var(--fl-speed) 3.1s backwards;
+  animation: blooming-leaf-right var(--fl-speed) 3.1s backwards;
+}
+.flower--4 .flower__line__leaf--2 {
+  -webkit-animation: blooming-leaf-right var(--fl-speed) 2.9s backwards;
+  animation: blooming-leaf-right var(--fl-speed) 2.9s backwards;
+}
+.flower--4 .flower__line__leaf--3 {
+  -webkit-animation: blooming-leaf-left var(--fl-speed) 2.7s backwards;
+  animation: blooming-leaf-left var(--fl-speed) 2.7s backwards;
+}
+.flower--4 .flower__line__leaf--4 {
+  -webkit-animation: blooming-leaf-left var(--fl-speed) 2.5s backwards;
+  animation: blooming-leaf-left var(--fl-speed) 2.5s backwards;
+}
+
 .flower__leafs {
   position: relative;
   -webkit-animation: blooming-flower 2s backwards;
@@ -230,6 +259,12 @@ body {
   -webkit-animation-delay: 1.7s;
   animation-delay: 1.7s;
 }
+
+.flower__leafs--4 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
 .flower__leafs::after {
   content: "";
   position: absolute;
@@ -1505,6 +1540,26 @@ body {
     transform: rotate(-20deg) rotateY(-10deg);
   }
 }
+
+@-webkit-keyframes moving-flower-4 {
+  0%,
+  100% {
+    transform: scale(0.65) rotate(-10deg);
+  }
+  50% {
+    transform: scale(0.65) rotate(-12deg) rotateY(-10deg);
+  }
+}
+@keyframes moving-flower-4 {
+  0%,
+  100% {
+    transform: scale(0.65) rotate(-10deg);
+  }
+  50% {
+    transform: scale(0.65) rotate(-12deg) rotateY(-10deg);
+  }
+}
+
 @-webkit-keyframes blooming-leaf-right {
   0% {
     transform-origin: left;
