@@ -358,6 +358,70 @@ body {
   animation: blooming-leaf-left var(--fl-speed) 2.5s backwards;
 }
 
+/* ===== Flor 9: tallo propio invisible ===== */
+.flower--9 {
+  left: 50%;
+  bottom: 33vmin;
+  transform: rotate(30deg);
+  z-index: 2;
+  -webkit-animation: moving-flower-9 4s linear infinite;
+  animation: moving-flower-9 4s linear infinite;
+}
+.flower__leafs--9 {
+  -webkit-animation-delay: 3.4s;
+  animation-delay: 3.4s;
+}
+.flower--9 .flower__line {
+  position: relative;
+  background-image: none;
+  box-shadow: none;
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+/* ===== Tallo SVG independiente, superpuesto sobre el tallo invisible ===== */
+.stem-curve--9 {
+  position: absolute;
+  left: 50%;
+  bottom: 33vmin;
+  width: 1.5vmin;
+  height: 55vmin;
+  transform-origin: bottom center;
+  transform: rotate(30deg);
+  z-index: 2;
+  -webkit-animation: moving-flower-9 4s linear infinite;
+  animation: moving-flower-9 4s linear infinite;
+}
+.stem-curve--9 svg {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 12vmin;
+  height: 100%;
+  transform: translateX(-50%);
+  overflow: visible;
+  -webkit-animation: grow-flower-tree 4s 1.2s backwards;
+  animation: grow-flower-tree 4s 1.2s backwards;
+}
+@-webkit-keyframes moving-flower-9 {
+  0%,
+  100% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(28deg) rotateY(-10deg);
+  }
+}
+@keyframes moving-flower-9 {
+  0%,
+  100% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(28deg) rotateY(-10deg);
+  }
+}
+
 .flower__leafs {
   position: relative;
   -webkit-animation: blooming-flower 2s backwards;
@@ -399,6 +463,11 @@ body {
 .flower__leafs--8 {
   -webkit-animation-delay: 3.1s;
   animation-delay: 3.1;
+}
+
+.flower__leafs--9 {
+  -webkit-animation-delay: 3.4s;
+  animation-delay: 3.4;
 }
 
 .flower__leafs::after {
