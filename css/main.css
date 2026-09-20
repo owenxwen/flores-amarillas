@@ -49,7 +49,7 @@ body {
   transform: translateX(-50%);
   width: 100%;
   height: 100%;
-  filter: blur(0.1vmin);
+  filter: blur(0.704px);
   background-image: radial-gradient(
       ellipse at top,
       transparent 0%,
@@ -104,7 +104,7 @@ body {
 
 .flower {
   position: absolute;
-  bottom: 10vmin;
+  bottom: 70.4px;
   transform-origin: bottom center;
   z-index: 10;
   --fl-speed: 0.8s;
@@ -114,7 +114,7 @@ body {
   animation: moving-flower-1 4s linear infinite;
 }
 .flower--1 .flower__line {
-  height: 70vmin;
+  height: 492.8px;
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
@@ -149,7 +149,7 @@ body {
   animation: moving-flower-2 4s linear infinite;
 }
 .flower--2 .flower__line {
-  height: 60vmin;
+  height: 422.4px;
   -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
 }
@@ -198,7 +198,7 @@ body {
 
 .flower--4 {
   left: 50%;
-  bottom: 38vmin;
+  bottom: 267.52px;
   transform: rotate(-15deg);
   z-index: 2;
   -webkit-animation: moving-flower-4 4s linear infinite;
@@ -227,7 +227,7 @@ body {
 
 .flower--5 {
   left: 50%;
-  bottom: 33vmin;
+  bottom: 232.32px;
   transform: rotate(-15deg);
   z-index: 2;
   -webkit-animation: moving-flower-5 4s linear infinite;
@@ -255,7 +255,7 @@ body {
 }
 .flower--6 {
   left: 50%;
-  bottom: 33vmin;
+  bottom: 232.32px;
   transform: rotate(-15deg);
   z-index: 2;
   -webkit-animation: moving-flower-6 4s linear infinite;
@@ -284,7 +284,7 @@ body {
 
 .flower--7 {
   left: 50%;
-  bottom: 33vmin;
+  bottom: 232.32px;
   transform: rotate(-15deg);
   z-index: 2;
   -webkit-animation: moving-flower-7 4s linear infinite;
@@ -313,7 +313,7 @@ body {
 
 .flower--8 {
   left: 50%;
-  bottom: 33vmin;
+  bottom: 232.32px;
   transform: rotate(-15deg);
   z-index: 2;
   -webkit-animation: moving-flower-8 4s linear infinite;
@@ -342,7 +342,7 @@ body {
 
 .flower--9 {
   left: 50%;
-  bottom: 33vmin;
+  bottom: 232.32px;
   transform: rotate(30deg);
   z-index: 2;
   -webkit-animation: moving-flower-9 4s linear infinite;
@@ -364,9 +364,9 @@ body {
 .stem-curve--9 {
   position: absolute;
   left: 50%;
-  bottom: 33vmin;
-  width: 1.5vmin;
-  height: 55vmin;
+  bottom: 232.32px;
+  width: 10.56px;
+  height: 387.2px;
   transform-origin: bottom center;
   transform: rotate(30deg);
   z-index: 2;
@@ -378,7 +378,7 @@ body {
   position: absolute;
   left: 50%;
   bottom: 0;
-  width: 12vmin;
+  width: 84.48px;
   height: 100%;
   transform: translateX(-50%);
   overflow: visible;
@@ -444,12 +444,12 @@ body {
 
 .flower__leafs--8 {
   -webkit-animation-delay: 3.1s;
-  animation-delay: 3.1;
+  animation-delay: 3.1s;
 }
 
 .flower__leafs--9 {
   -webkit-animation-delay: 3.4s;
-  animation-delay: 3.4;
+  animation-delay: 3.4s;
 }
 
 .flower__leafs::after {
@@ -458,24 +458,24 @@ body {
   left: 0;
   top: 0;
   transform: translate(-50%, -100%);
-  width: 8vmin;
-  height: 8vmin;
+  width: 56.32px;
+  height: 56.32px;
   background-color: #f9fd25;
   /* background-color: #fd2525; */
-  filter: blur(10vmin);
+  filter: blur(70.4px);
 }
 .flower__leaf {
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: 8vmin;
-  height: 11vmin;
+  width: 56.32px;
+  height: 77.44px;
   border-radius: 51% 49% 47% 53%/44% 45% 55% 69%;
   background-color: #253bfd;
   background-color: #fddd25;
   transform-origin: bottom center;
   opacity: 0.9;
-  box-shadow: inset 0 0 2vmin rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0 0 14.08px rgba(255, 255, 255, 0.5);
 }
 .flower__leaf--1 {
   transform: translate(-10%, 1%) rotateY(40deg) rotateX(-50deg);
@@ -487,10 +487,10 @@ body {
   transform: translate(-90%, 0%) rotateY(45deg) rotateX(50deg);
 }
 .flower__leaf--4 {
-  width: 8vmin;
-  height: 8vmin;
+  width: 56.32px;
+  height: 56.32px;
   transform-origin: bottom left;
-  border-radius: 4vmin 10vmin 4vmin 4vmin;
+  border-radius: 28.16px 70.4px 28.16px 28.16px;
   transform: translate(0%, 18%) rotateX(70deg) rotate(-43deg);
   background-color: #7c6901;
   z-index: 1;
@@ -498,10 +498,10 @@ body {
 }
 .flower__white-circle {
   position: absolute;
-  left: -3.5vmin;
-  top: -3vmin;
-  width: 9vmin;
-  height: 4vmin;
+  left: -24.64px;
+  top: -21.12px;
+  width: 63.36px;
+  height: 28.16px;
   border-radius: 50%;
   background-color: #fff;
 }
@@ -622,8 +622,8 @@ body {
     linear-gradient(90deg, rgb(255, 235, 18), rgb(255, 206, 0));
 }
 .flower__line {
-  height: 55vmin;
-  width: 1.5vmin;
+  height: 387.2px;
+  width: 10.56px;
   background-image: linear-gradient(
       to left,
       rgba(0, 0, 0, 0.2),
@@ -636,8 +636,8 @@ body {
   animation: grow-flower-tree 4s backwards;
 }
 .flower__line__leaf {
-  --w: 7vmin;
-  --h: calc(var(--w) + 2vmin);
+  --w: 49.28px;
+  --h: calc(var(--w) + 14.08px);
   position: absolute;
   top: 20%;
   left: 90%;
@@ -681,12 +681,12 @@ body {
 }
 .flower__light {
   position: absolute;
-  bottom: 0vmin;
-  width: 1vmin;
-  height: 1vmin;
+  bottom: 0px;
+  width: 7.04px;
+  height: 7.04px;
   background-color: rgb(255, 251, 0);
   border-radius: 50%;
-  filter: blur(0.2vmin);
+  filter: blur(1.408px);
   -webkit-animation: light-ans 4s linear infinite backwards;
   animation: light-ans 4s linear infinite backwards;
 }
@@ -694,51 +694,51 @@ body {
   background-color: #23f0ff;
 }
 .flower__light--1 {
-  left: -2vmin;
+  left: -14.08px;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
 .flower__light--2 {
-  left: 3vmin;
+  left: 21.12px;
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
 .flower__light--3 {
-  left: -6vmin;
+  left: -42.24px;
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
 .flower__light--4 {
-  left: 6vmin;
+  left: 42.24px;
   -webkit-animation-delay: 0.9s;
   animation-delay: 0.9s;
 }
 .flower__light--5 {
-  left: -1vmin;
+  left: -7.04px;
   -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s;
 }
 .flower__light--6 {
-  left: -4vmin;
+  left: -28.16px;
   -webkit-animation-delay: 3s;
   animation-delay: 3s;
 }
 .flower__light--7 {
-  left: 3vmin;
+  left: 21.12px;
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
 }
 .flower__light--8 {
-  left: -6vmin;
+  left: -42.24px;
   -webkit-animation-delay: 3.5s;
   animation-delay: 3.5s;
 }
 .flower__grass {
   --c: #159faa;
-  --line-w: 1.5vmin;
+  --line-w: 10.56px;
   position: absolute;
-  bottom: 12vmin;
-  left: -7vmin;
+  bottom: 84.48px;
+  left: -49.28px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -751,8 +751,8 @@ body {
   animation: moving-grass 2s linear infinite;
 }
 .flower__grass--2 {
-  left: 2vmin;
-  bottom: 10vmin;
+  left: 14.08px;
+  bottom: 70.4px;
   transform: scale(0.5) rotate(75deg) rotateX(10deg) rotateY(-200deg);
   opacity: 0.8;
   z-index: 0;
@@ -760,8 +760,8 @@ body {
   animation: moving-grass--2 1.5s linear infinite;
 }
 .flower__grass--top {
-  width: 7vmin;
-  height: 10vmin;
+  width: 49.28px;
+  height: 70.4px;
   border-top-right-radius: 100%;
   border-right: var(--line-w) solid var(--c);
   transform-origin: bottom center;
@@ -770,11 +770,11 @@ body {
 .flower__grass--bottom {
   margin-top: -2px;
   width: var(--line-w);
-  height: 25vmin;
+  height: 176px;
   background-image: linear-gradient(to top, transparent, var(--c));
 }
 .flower__grass__leaf {
-  --size: 10vmin;
+  --size: 70.4px;
   position: absolute;
   width: calc(var(--size) * 2.1);
   height: var(--size);
@@ -791,7 +791,7 @@ body {
 .flower__grass__leaf--1 {
   top: -6%;
   left: 30%;
-  --size: 6vmin;
+  --size: 42.24px;
   transform: rotate(-20deg);
   -webkit-animation: growing-grass-ans--1 2s 2.6s backwards;
   animation: growing-grass-ans--1 2s 2.6s backwards;
@@ -811,7 +811,7 @@ body {
 .flower__grass__leaf--2 {
   top: -5%;
   left: -110%;
-  --size: 6vmin;
+  --size: 42.24px;
   transform: rotate(10deg);
   -webkit-animation: growing-grass-ans--2 2s 2.4s linear backwards;
   animation: growing-grass-ans--2 2s 2.4s linear backwards;
@@ -831,7 +831,7 @@ body {
 .flower__grass__leaf--3 {
   top: 5%;
   left: 60%;
-  --size: 8vmin;
+  --size: 56.32px;
   transform: rotate(-18deg) rotateX(-20deg);
   -webkit-animation: growing-grass-ans--3 2s 2.2s linear backwards;
   animation: growing-grass-ans--3 2s 2.2s linear backwards;
@@ -851,7 +851,7 @@ body {
 .flower__grass__leaf--4 {
   top: 6%;
   left: -135%;
-  --size: 8vmin;
+  --size: 56.32px;
   transform: rotate(2deg);
   -webkit-animation: growing-grass-ans--4 2s 2s linear backwards;
   animation: growing-grass-ans--4 2s 2s linear backwards;
@@ -871,7 +871,7 @@ body {
 .flower__grass__leaf--5 {
   top: 20%;
   left: 60%;
-  --size: 10vmin;
+  --size: 70.4px;
   transform: rotate(-24deg) rotateX(-20deg);
   -webkit-animation: growing-grass-ans--5 2s 1.8s linear backwards;
   animation: growing-grass-ans--5 2s 1.8s linear backwards;
@@ -891,7 +891,7 @@ body {
 .flower__grass__leaf--6 {
   top: 22%;
   left: -180%;
-  --size: 10vmin;
+  --size: 70.4px;
   transform: rotate(10deg);
   -webkit-animation: growing-grass-ans--6 2s 1.6s linear backwards;
   animation: growing-grass-ans--6 2s 1.6s linear backwards;
@@ -911,7 +911,7 @@ body {
 .flower__grass__leaf--7 {
   top: 39%;
   left: 70%;
-  --size: 10vmin;
+  --size: 70.4px;
   transform: rotate(-10deg);
   -webkit-animation: growing-grass-ans--7 2s 1.4s linear backwards;
   animation: growing-grass-ans--7 2s 1.4s linear backwards;
@@ -931,7 +931,7 @@ body {
 .flower__grass__leaf--8 {
   top: 40%;
   left: -215%;
-  --size: 11vmin;
+  --size: 77.44px;
   transform: rotate(10deg);
   -webkit-animation: growing-grass-ans--8 2s 1.2s linear backwards;
   animation: growing-grass-ans--8 2s 1.2s linear backwards;
@@ -955,16 +955,16 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  filter: blur(1.5vmin);
+  filter: blur(10.56px);
   z-index: 100;
 }
 .flower__g-long {
-  --w: 2vmin;
-  --h: 6vmin;
+  --w: 14.08px;
+  --h: 42.24px;
   --c: #159faa;
   position: absolute;
-  bottom: 10vmin;
-  left: -3vmin;
+  bottom: 70.4px;
+  left: -21.12px;
   transform-origin: bottom center;
   transform: rotate(-30deg) rotateY(-20deg);
   display: flex;
@@ -993,15 +993,15 @@ body {
 }
 .flower__g-long__top {
   top: calc(var(--h) * -1);
-  width: calc(var(--w) + 1vmin);
+  width: calc(var(--w) + 7.04px);
   height: var(--h);
   border-top-right-radius: 100%;
-  border-right: 0.7vmin solid var(--c);
-  transform: translate(-0.7vmin, 1vmin);
+  border-right: 4.928px solid var(--c);
+  transform: translate(-4.928px, 7.04px);
 }
 .flower__g-long__bottom {
   width: var(--w);
-  height: 50vmin;
+  height: 352px;
   transform-origin: bottom center;
   background-image: linear-gradient(to top, transparent 30%, var(--c));
   box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
@@ -1010,16 +1010,16 @@ body {
 }
 .flower__g-right {
   position: absolute;
-  bottom: 6vmin;
-  left: -2vmin;
+  bottom: 42.24px;
+  left: -14.08px;
   transform-origin: bottom left;
   transform: rotate(20deg);
 }
 .flower__g-right .leaf {
-  width: 30vmin;
-  height: 50vmin;
+  width: 211.2px;
+  height: 352px;
   border-top-left-radius: 100%;
-  border-left: 2vmin solid #079097;
+  border-left: 14.08px solid #079097;
   background-image: linear-gradient(
     to bottom,
     transparent,
@@ -1032,14 +1032,14 @@ body {
   animation: flower-g-right-ans 2.5s linear infinite;
 }
 .flower__g-right--2 {
-  left: 5vmin;
+  left: 35.2px;
   transform: rotateY(-180deg);
   -webkit-animation: flower-g-right-ans--2 3s linear infinite;
   animation: flower-g-right-ans--2 3s linear infinite;
 }
 .flower__g-right--2 .leaf {
-  height: 75vmin;
-  filter: blur(0.3vmin);
+  height: 528px;
+  filter: blur(2.112px);
   opacity: 0.8;
 }
 @-webkit-keyframes flower-g-right-ans {
@@ -1080,8 +1080,8 @@ body {
 }
 .flower__g-front {
   position: absolute;
-  bottom: 6vmin;
-  left: 2.5vmin;
+  bottom: 42.24px;
+  left: 17.6px;
   z-index: 100;
   transform-origin: bottom center;
   transform: rotate(-28deg) rotateY(30deg) scale(1.04);
@@ -1107,8 +1107,8 @@ body {
   }
 }
 .flower__g-front__line {
-  width: 0.3vmin;
-  height: 20vmin;
+  width: 2.112px;
+  height: 140.8px;
   background-image: linear-gradient(
     to top,
     transparent,
@@ -1125,7 +1125,7 @@ body {
   transform: rotate(10deg);
 }
 .flower__g-front__leaf-wrapper:nth-child(even) {
-  left: 0vmin;
+  left: 0px;
   transform: rotateY(-180deg) rotate(5deg);
   -webkit-animation: flower__g-front__leaf-left-ans 1s ease-in backwards;
   animation: flower__g-front__leaf-left-ans 1s ease-in backwards;
@@ -1135,24 +1135,24 @@ body {
   animation: flower__g-front__leaf-ans 1s ease-in backwards;
 }
 .flower__g-front__leaf-wrapper--1 {
-  top: -8vmin;
+  top: -56.32px;
   transform: scale(0.7);
   -webkit-animation: flower__g-front__leaf-ans 1s 5.5s ease-in backwards !important;
   animation: flower__g-front__leaf-ans 1s 5.5s ease-in backwards !important;
 }
 .flower__g-front__leaf-wrapper--2 {
-  top: -8vmin;
+  top: -56.32px;
   transform: rotateY(-180deg) scale(0.7) !important;
   -webkit-animation: flower__g-front__leaf-left-ans-2 1s 4.6s ease-in backwards !important;
   animation: flower__g-front__leaf-left-ans-2 1s 4.6s ease-in backwards !important;
 }
 .flower__g-front__leaf-wrapper--3 {
-  top: -3vmin;
+  top: -21.12px;
   -webkit-animation: flower__g-front__leaf-ans 1s 4.6s ease-in backwards;
   animation: flower__g-front__leaf-ans 1s 4.6s ease-in backwards;
 }
 .flower__g-front__leaf-wrapper--4 {
-  top: -3vmin;
+  top: -21.12px;
   transform: rotateY(-180deg) scale(0.9) !important;
   -webkit-animation: flower__g-front__leaf-left-ans-2 1s 4.6s ease-in backwards !important;
   animation: flower__g-front__leaf-left-ans-2 1s 4.6s ease-in backwards !important;
@@ -1169,11 +1169,11 @@ body {
 }
 .flower__g-front__leaf-wrapper--5,
 .flower__g-front__leaf-wrapper--6 {
-  top: 2vmin;
+  top: 14.08px;
 }
 .flower__g-front__leaf-wrapper--7,
 .flower__g-front__leaf-wrapper--8 {
-  top: 6.5vmin;
+  top: 45.76px;
 }
 .flower__g-front__leaf-wrapper--2 {
   -webkit-animation-delay: 5.2s !important;
@@ -1220,10 +1220,10 @@ body {
   }
 }
 .flower__g-front__leaf {
-  width: 10vmin;
-  height: 10vmin;
+  width: 70.4px;
+  height: 70.4px;
   border-radius: 100% 0% 0% 100%/100% 100% 0% 0%;
-  box-shadow: inset 0 2px 1vmin hsla(184deg, 97%, 58%, 0.2);
+  box-shadow: inset 0 2px 7.04px hsla(184deg, 97%, 58%, 0.2);
   background-image: linear-gradient(
       to bottom left,
       transparent,
@@ -1245,8 +1245,8 @@ body {
 }
 .flower__g-fr {
   position: absolute;
-  bottom: -4vmin;
-  left: vmin;
+  bottom: -28.16px;
+  left: 0;
   transform-origin: bottom left;
   z-index: 10;
   -webkit-animation: flower__g-fr-ans 2s linear infinite;
@@ -1271,10 +1271,10 @@ body {
   }
 }
 .flower__g-fr .leaf {
-  width: 30vmin;
-  height: 50vmin;
+  width: 211.2px;
+  height: 352px;
   border-top-left-radius: 100%;
-  border-left: 2vmin solid #079097;
+  border-left: 14.08px solid #079097;
   -webkit-mask-image: linear-gradient(to top, transparent 25%, #079097 50%);
   position: relative;
   z-index: 1;
@@ -1283,10 +1283,10 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 10vmin;
-  height: 10vmin;
+  width: 70.4px;
+  height: 70.4px;
   border-radius: 100% 0% 0% 100%/100% 100% 0% 0%;
-  box-shadow: inset 0 2px 1vmin hsla(184deg, 97%, 58%, 0.2);
+  box-shadow: inset 0 2px 7.04px hsla(184deg, 97%, 58%, 0.2);
   background-image: linear-gradient(
       to bottom left,
       transparent,
@@ -1301,7 +1301,7 @@ body {
   );
 }
 .flower__g-fr__leaf--1 {
-  left: 20vmin;
+  left: 140.8px;
   transform: rotate(45deg);
   -webkit-animation: flower__g-fr-leaft-ans-1 0.5s 5.2s linear backwards;
   animation: flower__g-fr-leaft-ans-1 0.5s 5.2s linear backwards;
@@ -1319,29 +1319,29 @@ body {
   }
 }
 .flower__g-fr__leaf--2 {
-  left: 12vmin;
-  top: -7vmin;
+  left: 84.48px;
+  top: -49.28px;
   transform: rotate(25deg) rotateY(-180deg);
   -webkit-animation: flower__g-fr-leaft-ans-6 0.5s 5s linear backwards;
   animation: flower__g-fr-leaft-ans-6 0.5s 5s linear backwards;
 }
 .flower__g-fr__leaf--3 {
-  left: 15vmin;
-  top: 6vmin;
+  left: 105.6px;
+  top: 42.24px;
   transform: rotate(55deg);
   -webkit-animation: flower__g-fr-leaft-ans-5 0.5s 4.8s linear backwards;
   animation: flower__g-fr-leaft-ans-5 0.5s 4.8s linear backwards;
 }
 .flower__g-fr__leaf--4 {
-  left: 6vmin;
-  top: -2vmin;
+  left: 42.24px;
+  top: -14.08px;
   transform: rotate(25deg) rotateY(-180deg);
   -webkit-animation: flower__g-fr-leaft-ans-6 0.5s 4.6s linear backwards;
   animation: flower__g-fr-leaft-ans-6 0.5s 4.6s linear backwards;
 }
 .flower__g-fr__leaf--5 {
-  left: 10vmin;
-  top: 14vmin;
+  left: 70.4px;
+  top: 98.56px;
   transform: rotate(55deg);
   -webkit-animation: flower__g-fr-leaft-ans-5 0.5s 4.4s linear backwards;
   animation: flower__g-fr-leaft-ans-5 0.5s 4.4s linear backwards;
@@ -1359,8 +1359,8 @@ body {
   }
 }
 .flower__g-fr__leaf--6 {
-  left: 0vmin;
-  top: 6vmin;
+  left: 0px;
+  top: 42.24px;
   transform: rotate(25deg) rotateY(-180deg);
   -webkit-animation: flower__g-fr-leaft-ans-6 0.5s 4.2s linear backwards;
   animation: flower__g-fr-leaft-ans-6 0.5s 4.2s linear backwards;
@@ -1378,8 +1378,8 @@ body {
   }
 }
 .flower__g-fr__leaf--7 {
-  left: 5vmin;
-  top: 22vmin;
+  left: 35.2px;
+  top: 154.88px;
   transform: rotate(45deg);
   -webkit-animation: flower__g-fr-leaft-ans-7 0.5s 4s linear backwards;
   animation: flower__g-fr-leaft-ans-7 0.5s 4s linear backwards;
@@ -1397,8 +1397,8 @@ body {
   }
 }
 .flower__g-fr__leaf--8 {
-  left: -4vmin;
-  top: 15vmin;
+  left: -28.16px;
+  top: 105.6px;
   transform: rotate(15deg) rotateY(-180deg);
   -webkit-animation: flower__g-fr-leaft-ans-8 0.5s 3.8s linear backwards;
   animation: flower__g-fr-leaft-ans-8 0.5s 3.8s linear backwards;
@@ -1418,12 +1418,12 @@ body {
 
 .long-g {
   position: absolute;
-  bottom: 25vmin;
-  left: -42vmin;
+  bottom: 176px;
+  left: -295.68px;
   transform-origin: bottom left;
 }
 .long-g--1 {
-  bottom: 0vmin;
+  bottom: 0px;
   transform: scale(0.8) rotate(-5deg);
 }
 .long-g--1 .leaf {
@@ -1434,15 +1434,15 @@ body {
   ) !important;
 }
 .long-g--1 .leaf--1 {
-  --w: 5vmin;
-  --h: 60vmin;
-  left: -2vmin;
+  --w: 35.2px;
+  --h: 422.4px;
+  left: -14.08px;
   transform: rotate(3deg) rotateY(-180deg);
 }
 .long-g--2,
 .long-g--3 {
-  bottom: -3vmin;
-  left: -35vmin;
+  bottom: -21.12px;
+  left: -246.4px;
   transform-origin: center;
   transform: scale(0.6) rotateX(60deg);
 }
@@ -1456,12 +1456,12 @@ body {
 }
 .long-g--2 .leaf--1,
 .long-g--3 .leaf--1 {
-  left: -1vmin;
+  left: -7.04px;
   transform: rotateY(-180deg);
 }
 .long-g--3 {
-  left: -17vmin;
-  bottom: 0vmin;
+  left: -119.68px;
+  bottom: 0px;
 }
 .long-g--3 .leaf {
   -webkit-mask-image: linear-gradient(
@@ -1471,8 +1471,8 @@ body {
   ) !important;
 }
 .long-g--4 {
-  left: 25vmin;
-  bottom: -3vmin;
+  left: 176px;
+  bottom: -21.12px;
   transform-origin: center;
   transform: scale(0.6) rotateX(60deg);
 }
@@ -1484,35 +1484,35 @@ body {
   ) !important;
 }
 .long-g--5 {
-  left: 42vmin;
-  bottom: 0vmin;
+  left: 295.68px;
+  bottom: 0px;
   transform: scale(0.8) rotate(2deg);
 }
 .long-g--6 {
-  left: 0vmin;
-  bottom: -20vmin;
+  left: 0px;
+  bottom: -140.8px;
   z-index: 100;
-  filter: blur(0.3vmin);
+  filter: blur(2.112px);
   transform: scale(0.8) rotate(2deg);
 }
 .long-g--7 {
-  left: 35vmin;
-  bottom: 20vmin;
+  left: 246.4px;
+  bottom: 140.8px;
   z-index: -1;
-  filter: blur(0.3vmin);
+  filter: blur(2.112px);
   transform: scale(0.6) rotate(2deg);
   opacity: 0.7;
 }
 .long-g .leaf {
-  --w: 15vmin;
-  --h: 40vmin;
+  --w: 105.6px;
+  --h: 281.6px;
   --c: #1aaa15;
   position: absolute;
   bottom: 0;
   width: var(--w);
   height: var(--h);
   border-top-left-radius: 100%;
-  border-left: 2vmin solid var(--c);
+  border-left: 14.08px solid var(--c);
   -webkit-mask-image: linear-gradient(
     to top,
     transparent 20%,
@@ -1521,31 +1521,31 @@ body {
   transform-origin: bottom center;
 }
 .long-g .leaf--0 {
-  left: 2vmin;
+  left: 14.08px;
   -webkit-animation: leaf-ans-1 4s linear infinite;
   animation: leaf-ans-1 4s linear infinite;
 }
 .long-g .leaf--1 {
-  --w: 5vmin;
-  --h: 60vmin;
+  --w: 35.2px;
+  --h: 422.4px;
   -webkit-animation: leaf-ans-1 4s linear infinite;
   animation: leaf-ans-1 4s linear infinite;
 }
 .long-g .leaf--2 {
-  --w: 10vmin;
-  --h: 40vmin;
-  left: -0.5vmin;
-  bottom: 5vmin;
+  --w: 70.4px;
+  --h: 281.6px;
+  left: -3.52px;
+  bottom: 35.2px;
   transform-origin: bottom left;
   transform: rotateY(-180deg);
   -webkit-animation: leaf-ans-2 3s linear infinite;
   animation: leaf-ans-2 3s linear infinite;
 }
 .long-g .leaf--3 {
-  --w: 5vmin;
-  --h: 30vmin;
-  left: -1vmin;
-  bottom: 3.2vmin;
+  --w: 35.2px;
+  --h: 211.2px;
+  left: -7.04px;
+  bottom: 22.528px;
   transform-origin: bottom left;
   transform: rotate(-10deg) rotateY(-180deg);
   -webkit-animation: leaf-ans-3 3s linear infinite;
@@ -1628,49 +1628,49 @@ body {
 @-webkit-keyframes light-ans {
   0% {
     opacity: 0;
-    transform: translateY(0vmin);
+    transform: translateY(0px);
   }
   25% {
     opacity: 1;
-    transform: translateY(-5vmin) translateX(-2vmin);
+    transform: translateY(-35.2px) translateX(-14.08px);
   }
   50% {
     opacity: 1;
-    transform: translateY(-15vmin) translateX(2vmin);
-    filter: blur(0.2vmin);
+    transform: translateY(-105.6px) translateX(14.08px);
+    filter: blur(1.408px);
   }
   75% {
-    transform: translateY(-20vmin) translateX(-2vmin);
-    filter: blur(0.2vmin);
+    transform: translateY(-140.8px) translateX(-14.08px);
+    filter: blur(1.408px);
   }
   100% {
-    transform: translateY(-30vmin);
+    transform: translateY(-211.2px);
     opacity: 0;
-    filter: blur(1vmin);
+    filter: blur(7.04px);
   }
 }
 @keyframes light-ans {
   0% {
     opacity: 0;
-    transform: translateY(0vmin);
+    transform: translateY(0px);
   }
   25% {
     opacity: 1;
-    transform: translateY(-5vmin) translateX(-2vmin);
+    transform: translateY(-35.2px) translateX(-14.08px);
   }
   50% {
     opacity: 1;
-    transform: translateY(-15vmin) translateX(2vmin);
-    filter: blur(0.2vmin);
+    transform: translateY(-105.6px) translateX(14.08px);
+    filter: blur(1.408px);
   }
   75% {
-    transform: translateY(-20vmin) translateX(-2vmin);
-    filter: blur(0.2vmin);
+    transform: translateY(-140.8px) translateX(-14.08px);
+    filter: blur(1.408px);
   }
   100% {
-    transform: translateY(-30vmin);
+    transform: translateY(-211.2px);
     opacity: 0;
-    filter: blur(1vmin);
+    filter: blur(7.04px);
   }
 }
 @-webkit-keyframes moving-flower-1 {
@@ -1850,13 +1850,13 @@ body {
 @-webkit-keyframes grow-flower-tree {
   0% {
     height: 0;
-    border-radius: 1vmin;
+    border-radius: 7.04px;
   }
 }
 @keyframes grow-flower-tree {
   0% {
     height: 0;
-    border-radius: 1vmin;
+    border-radius: 7.04px;
   }
 }
 @-webkit-keyframes blooming-flower {
@@ -1924,52 +1924,4 @@ body {
 .container * {
   -webkit-animation-play-state: paused !important;
   animation-play-state: paused !important;
-} 
-
-
-
-body, h1, p {
-  margin: 0;
-  padding: 0;
-}
-
-
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f7f7f7;
-  color: #333;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-h1 {
-  font-size: 2em;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-
-@media screen and (max-width: 600px) {
-  
-  h1 {
-      font-size: 1.5em;
-  }
-}
-
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-
-  h1 {
-      font-size: 1.8em;
-  }
-}
-
-@media screen and (min-width: 1025px) {
-
-  h1 {
-      font-size: 2em;
-  }
 }

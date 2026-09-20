@@ -1,0 +1,210 @@
+/* Reference composition: all measurements belong to a 1489 × 704 stage. */
+html, body { width: 100%; height: 100%; overflow: clip; }
+body {
+  position: fixed;
+  inset: 0;
+  min-height: 100svh;
+  background: #030909;
+  overflow: hidden;
+  isolation: isolate;
+  perspective: none;
+}
+.night {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transform: none;
+  filter: none;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse at 50% 0%, #15252666, transparent 70%),
+    linear-gradient(#0a1417, #050b0d 65%, #010403);
+}
+.dew { width: 100%; height: 100%; position: absolute; inset: 0; }
+.flowers {
+  position: absolute;
+  left: 50%;
+  bottom: var(--scene-bottom, 0px);
+  width: 0;
+  height: 0;
+  margin: 0;
+  font-size: initial;
+  letter-spacing: normal;
+  transform: scale(var(--scene-scale, 1));
+  transform-origin: bottom center;
+}
+.flowers::before {
+  content: '';
+  position: absolute;
+  left: -450px;
+  bottom: 10px;
+  width: 900px;
+  height: 170px;
+  background: radial-gradient(ellipse at 18% 63%, #d3af2425, transparent 25%),
+    radial-gradient(ellipse at 80% 61%, #ba972229, transparent 26%);
+  filter: blur(17px);
+  z-index: 30;
+  pointer-events: none;
+}
+.flowers::after {
+  content: '';
+  position: absolute;
+  left: -650px;
+  bottom: -35px;
+  width: 1300px;
+  height: 130px;
+  background: radial-gradient(ellipse at 50% 60%, #020706cc, transparent 72%);
+  z-index: 40;
+  pointer-events: none;
+}
+.bouquet {
+  position: absolute;
+  left: -744.5px;
+  bottom: 0;
+  width: 1489px;
+  height: 704px;
+  transform-origin: 50% 98%;
+  animation: bouquet-sway 9s ease-in-out infinite;
+  z-index: 5;
+}
+.bouquet-stems { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.growing-stem {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+  animation: stem-emerge var(--stem-duration) ease-in-out var(--stem-delay) backwards;
+}
+.sprouting-leaf {
+  transform-origin: 0 0;
+  animation: leaf-unfold 1.3s ease-out var(--leaf-delay) backwards;
+}
+.blossom-growth {
+  transform-origin: 0 0;
+  animation: blossom-open 1.6s cubic-bezier(.22, .61, .36, 1) var(--bloom-delay) backwards;
+}
+.flowers::before {
+  animation: garden-light 3s ease-out 2s backwards;
+}
+.corollas { z-index: 25; }
+.foliage {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  transform: scale(.9);
+  transform-origin: bottom center;
+  z-index: 10;
+}
+.blossom {
+  position: absolute;
+  width: 0;
+  height: 0;
+  transform: rotate(var(--angle)) scale(var(--size));
+  z-index: 2;
+}
+.blossom .flower__leafs {
+  animation: petal-breathe 6s ease-in-out var(--delay) infinite;
+  transform-origin: 0 0;
+}
+.blossom .flower__leafs::after {
+  width: 130px;
+  height: 125px;
+  top: 5px;
+  background: #fbdc36;
+  opacity: .28;
+  filter: blur(37px);
+  z-index: -1;
+}
+.blossom .flower__leaf {
+  background: linear-gradient(12deg, #e5be2a, #f7d94b 55%, #f4d94f);
+  box-shadow: inset 0 0 12px #fff29333;
+  opacity: .96;
+}
+.blossom .flower__leaf--4 {
+  background: linear-gradient(#f9df65, #b99a23);
+  opacity: .88;
+}
+.blossom .flower__leaf--2::after {
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: 22px;
+  width: 7px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff58c;
+  opacity: .53;
+  box-shadow: 12px 15px 0 -2px #fbea7177;
+}
+.blossom .flower__white-circle {
+  background: #fff4b0;
+  box-shadow: 0 -2px 5px #fff5a54d;
+}
+.blossom .flower__white-circle::after {
+  background: linear-gradient(#f9dc48, #d5ad25);
+  width: 88%;
+  height: 76%;
+  top: 65%;
+}
+.blossom--small .flower__white-circle { opacity: .22; }
+.blossom--small .flower__leaf--4 { background: #e8c332; }
+.stamen {
+  position: absolute;
+  bottom: 4px;
+  left: -3px;
+  width: 7px;
+  height: var(--stamen-length);
+  border-radius: 60%;
+  background: linear-gradient(#ffed72, #f8cf29);
+  transform-origin: bottom center;
+  transform: rotate(var(--stamen-angle));
+  z-index: 3;
+}
+.stamen::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 10px;
+  top: -2px;
+  left: -.5px;
+  border-radius: 50%;
+  background: #ffe35d;
+}
+/* Keep the original sculpted foliage, muted to the reference's blue-green. */
+.long-g { filter: saturate(.65) brightness(.77); }
+.flower__g-front, .flower__g-fr, .flower__grass { filter: saturate(.72) brightness(.8); }
+.flower__g-long, .flower__g-right { filter: saturate(.65) brightness(.8); }
+.grow-ans, .growing-grass { animation-duration: 1.7s; }
+@keyframes bouquet-sway {
+  0%, 100% { transform: rotate(-.35deg); }
+  50% { transform: rotate(.45deg); }
+}
+@keyframes petal-breathe {
+  0%, 100% { transform: rotate(-.6deg); }
+  50% { transform: rotate(.6deg); }
+}
+@keyframes stem-emerge {
+  from { stroke-dashoffset: 1; opacity: 0; }
+  to { stroke-dashoffset: 0; }
+}
+@keyframes leaf-unfold {
+  from { transform: scale(.01) rotate(-15deg); opacity: 0; }
+  to { transform: scale(1) rotate(0); opacity: .88; }
+}
+@keyframes blossom-open {
+  0% { transform: scale(.02, .04); opacity: 0; }
+  18% { opacity: 1; }
+  75% { transform: scale(1.035, 1.02); }
+  100% { transform: scale(1); opacity: 1; }
+}
+@keyframes garden-light {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
