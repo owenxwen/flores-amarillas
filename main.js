@@ -165,8 +165,81 @@ function fitGarden() {
   garden.style.setProperty('--scene-scale', scale);
   garden.style.setProperty('--scene-bottom', `${Math.max(0, (height - 704 * scale) * .45)}px`);
 }
+
+function makeFallingPetals() {
+  const layer = document.createElement('div');
+  layer.className = 'falling-petals';
+  layer.setAttribute('aria-hidden', 'true');
+  // Fixed particle count, animated by CSS: no timers or accumulating elements.
+  for (let index = 0; index < 28; index++) {
+    const fall = document.createElement('span');
+    fall.className = 'petal-fall';
+    const duration = 11 + random() * 9;
+    fall.style.cssText = `left:${random() * 100}%;--fall-duration:${duration}s;--fall-delay:${-random() * duration}s;--drift:${(random() - .5) * 150}px;--petal-size:${9 + random() * 12}px;--flutter-duration:${2.5 + random() * 3}s`;
+    const petal = document.createElement('i');
+    petal.className = 'falling-petal';
+    fall.append(petal);
+    layer.append(fall);
+  }
+  document.body.append(layer);
+}
+
+function setupMusic() {
+  const audio = document.querySelector('#garden-music');
+  const button = document.querySelector('#music-toggle');
+  audio.volume = .55;
+  let starting = false;
+
+  function removeGestureListeners() {
+    document.removeEventListener('pointerdown', startOnGesture);
+    document.removeEventListener('keydown', startOnGesture);
+  }
+  async function playMusic() {
+    if (starting) return;
+    starting = true;
+    try {
+      await audio.play();
+    } catch (error) {
+      // Browsers may require a real user gesture before allowing audible audio.
+      button.textContent = error.name === 'NotAllowedError'
+        ? '♫ Activar música' : '♫ Reintentar música';
+    } finally {
+      starting = false;
+    }
+  }
+  function startOnGesture(event) {
+    if (button.contains(event.target)) return;
+    if (event.type === 'keydown' && !['Enter', ' '].includes(event.key)) return;
+    void playMusic();
+  }
+  audio.addEventListener('playing', () => {
+    button.textContent = '♫ Pausar música';
+    button.classList.add('is-playing');
+    removeGestureListeners();
+  });
+  const showPaused = () => {
+    button.textContent = '♫ Reproducir música';
+    button.classList.remove('is-playing');
+  };
+  audio.addEventListener('pause', showPaused);
+  audio.addEventListener('ended', showPaused);
+  audio.addEventListener('error', () => {
+    button.textContent = '♫ Audio no disponible';
+    button.classList.remove('is-playing');
+    removeGestureListeners();
+  });
+  button.addEventListener('click', () => {
+    if (audio.paused) void playMusic();
+    else audio.pause();
+  });
+  document.addEventListener('pointerdown', startOnGesture);
+  document.addEventListener('keydown', startOnGesture);
+  void playMusic();
+}
 makeBouquet();
 makeDew();
+makeFallingPetals();
 fitGarden();
 window.addEventListener('resize', fitGarden, { passive: true });
 document.body.classList.remove('container');
+setupMusic();
